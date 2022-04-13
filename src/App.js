@@ -4,6 +4,7 @@ import TextForm from './components/TextForm';
 // import About from './components/About';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
+// import Datatable from './components/Datatable';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -44,8 +45,8 @@ function App() {
     <>
     {/* <Router> */}
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} text = {text} />
-    <Alert alert={alert}/>
-    <div className="container my-3">
+    <Alert alert={alert}/> 
+    <div className="container my-3"> 
     {/* <Switch> */}
     {/* /users --> Component 1
         /users/home --> Component 2 */}
@@ -58,7 +59,8 @@ function App() {
     {/* </Switch> */}
     </div>
     {/* </Router> */}
-    </> 
+          {/* <Datatable/> */}
+     </> 
   );
 }
 
